@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <style>
+        table {
+			margin-top: 75px;
+            border-collapse: collapse;
+            border: none;
+        }
+        td, th {
+    border: none;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 18px;
+    text-align: center;
+        }
+	 *{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+        }
+        body{ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+
+        .nav{ 
+            width: 1200px;
+            height: 70px;
+            position: fixed;
+            top: 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            background-color:fff #;
+        }
+        .nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    right: 5%;
+    color: #000000;
+        }
+        .nav ul .nav-box{ 
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* 如果导航栏就六个导航，那么每个导航的宽度都是整个导航
+            的六分之一 */
+            width: calc((100% / 6)*1);
+            height: 10px;
+            border-radius: 2px;
+            transition: .5s;
+        }
+        .nav ul li{ 
+            width: 100%;
+            text-align: center;
+        }
+        .nav ul li a{
+    color: rgba(6,6,7,1);
+    font: 100 30px '优设标题黑';
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+        }
+        .nav ul li:nth-child(1):hover~.nav-box{ 
+            left: calc(100% / 6 *0);
+            background-color: rgb(250, 190, 250);
+        }
+        .nav ul li:nth-child(2):hover~.nav-box{ 
+            left: calc(100% / 6 *1);
+            background-color: red;
+        }
+        .nav ul li:nth-child(3):hover~.nav-box{ 
+            left: calc(100% / 6 *2);
+            background-color: #d18df8;
+        }
+        .nav ul li:nth-child(4):hover~.nav-box{ 
+            left: calc(100% / 6 *3);
+            background-color: #ffb1b1;
+        }
+        .nav ul li:nth-child(5):hover~.nav-box{ 
+            left: calc(100% / 6 *4);
+            background-color: #8da1f8;
+        }
+        .nav ul li:nth-child(6):hover~.nav-box{ 
+            left: calc(100% / 6 *5);
+            background-color: #7df88e;
+        }
+		 .background-image-cell {
+        background-image: url("../image/横向背景.jpg");rgba(255, 255, 255, 0.5);
+        background-blend-mode: multiply; /* 混合模式，使得颜色覆盖层与图片混合 */
+    background-size: cover;
+        background-size: cover; /* 覆盖整个单元格 */
+		
+    }
+    </style>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>法律知识讲解</title>
+</head>
+
+<body background="../image/背景图.jpeg">
+	  
+	 <div class="nav">
+        <ul>
+            <li><a href="../index.html">个人主页</a></li>
+            <li><a href="法律知识讲解.html">法律知识讲解</a></li>
+            <li><a href="五院四系.html">五院四系</a></li>
+            <li><a href="法律影视作品.html">法律影视作品</a></li>
+            <li><a href="法律事件.html">法律事件</a></li>
+            <li><a href="法律人物.html">法律人物</a></li>
+            <div class="nav-box"></div>
+        </ul>
+    </div>
+	
+<table width="75%" border="1">
+  <tbody>
+    <tr>
+      
+    </tr>
+    <tr>
+      <td><img src="../image/习近平法治思想.jpg" width="938" height="400" alt=""/></td>
+    </tr>
+    <tr>
+	
+      <td  background="../image/横向背景.jpg" style="font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, serif; font-size: 18px; color: #F3EAEA;">&nbsp;2<span style="font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', serif; color: #000000; font-size: 24px;"><strong>2023年11月27日，习近平总书记在二十届中央政治局第十次集体学习时发表重要讲话，对加强涉外法制建设、营造有利法治条件和外部环境作出重大战略部署，为做好新征程涉外法治工作指明了前进方向、提供了根本遵循。要深入学习贯彻习近平法治思想和习近平总书记关于加强涉外法治工作的重要论述，深刻领悟“两个确立”的决定性意义，增强“四个意识”、坚定“四个自信”、做到“两个维护”，发挥中央依法治国办设在司法部的统筹协调优势，贯通立法、执法、司法、守法和法律服务、法治人才培养等方面职能，在建设同高质量发展、高水平开放要求相适应的涉外法治体系和能力上持续发力，努力为中国式现代化行稳致远营造有利法治条件和外部环境。</strong></span></td>
+    </tr>
+    <tr>
+      <td class="background-image-cell"> <span style="font-size: 16px"></span>&nbsp;<strong>在赠与财产的权利转移之前，可以撤销赠与。但经过公证的赠与或者依法不得撤销的具有救灾、扶贫、助残等公益、道德义务性质的赠与除外。 《民法典》第六百五十八条： 赠与人在赠与财产的权利转移之前可以撤销赠与。 经过公证的赠与合同或者依法不得撤销的具有救灾、扶贫、助残等公益、道德义务性质的赠与合同,不适用前款规定。</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

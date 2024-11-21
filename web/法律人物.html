@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>典型法律事件</title>
+    <style>
+		 <style>
+		.nav ul {
+            list-style-type: none; /* 移除小黑点 */
+            padding: 0; /* 移除默认的内边距 */
+            margin: 0; /* 移除默认的外边距 */
+        }
+
+        *{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+        }
+        body{ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+			
+			
+         
+        }
+
+        .nav{ 
+            width: 1200px;
+            height: 70px;
+            position: fixed;
+            top: 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+			background-color:#fff；
+            
+        }
+        .nav ul{ 
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            right: 5%;
+        }
+        .nav ul .nav-box{ 
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* 如果导航栏就六个导航，那么每个导航的宽度都是整个导航
+            的六分之一 */
+            width: calc((100% / 6)*1);
+            height: 10px;
+            border-radius: 2px;
+            transition: .5s;
+        }
+        .nav ul li{ 
+            width: 100%;
+            text-align: center;
+        }
+        .nav ul li a{
+    color: hsla(219,59%,38%,1);
+    font: 100 30px '优设标题黑';
+    display: white;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+        }
+        .nav ul li:nth-child(1):hover~.nav-box{ 
+            left: calc(100% / 6 *0);
+            background-color: rgb(250, 190, 250);
+        }
+        .nav ul li:nth-child(2):hover~.nav-box{ 
+            left: calc(100% / 6 *1);
+            background-color: red;
+        }
+        .nav ul li:nth-child(3):hover~.nav-box{ 
+            left: calc(100% / 6 *2);
+            background-color: #d18df8;
+        }
+        .nav ul li:nth-child(4):hover~.nav-box{ 
+            left: calc(100% / 6 *3);
+            background-color: #ffb1b1;
+        }
+        .nav ul li:nth-child(5):hover~.nav-box{ 
+            left: calc(100% / 6 *4);
+            background-color: #8da1f8;
+        }
+        .nav ul li:nth-child(6):hover~.nav-box{ 
+            left: calc(100% / 6 *5);
+            background-color: #7df88e;
+		
+		}
+		.nav ul {
+    list-style-type: none; /* 移除小黑点 */
+    padding: 0; /* 移除默认的内边距 */
+    margin: 0; /* 移除默认的外边距 */
+}
+
+nav li {
+    display: inline; /* 使列表项水平排列 */
+    /* 其他样式 */
+}
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .shell {
+			margin-top: 85px;
+            display: flex;
+            flex-direction: column;
+            width: 90vw;
+            height: 90vh;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+            background-color: #fff;
+            color: #000;
+            overflow: hidden;
+        }
+
+        .ocean {
+            width: 100%;
+            height:170%;
+            background-color: blue;
+            background-image: url("../image/罗翔.jpg" );
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .ocean-text {
+    font: 900 20vh '';
+    position: relative;
+    background-image: url("../image/罗翔.jpg");
+    background-size: 90% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transform: translate(10%, -5%);
+    -webkit-text-stroke: 5px #ffffff;
+    font-size: 10 vh;
+        }
+
+        .content {
+            position: relative;
+            width: 100%;
+            height: 40%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main {
+            width: 300%;
+            height: 35vh;
+            position: relative;
+            display: flex;
+            left: 0;
+            transition: .3s;
+        }
+
+        .box {
+            width: 100vw;
+            height: 100%;
+            position: relative;
+        }
+
+        .page {
+            position: absolute;
+            color: #fff;
+            left: 150px;
+            top: -80px;
+        }
+
+        .page h2 {
+            font: 900 120px '';
+            color: #29519b;
+        }
+
+        .page span {
+            font: 400 30px '';
+            position: absolute;
+            right: -55px;
+            top: 30px;
+            color: rgb(134, 194, 250);
+        }
+
+        .bbspan {
+            display: block;
+            font: 500 40px '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-55%);
+            left: 150px;
+        }
+
+        .box h3 {
+            position: absolute;
+            right: 180px;
+            top: 50%;
+            font: 100 19px '';
+            transform: translateY(-50%);
+        }
+
+        .left {
+            width: 40px;
+            height: 40px;
+            background-image: url("../image/left.png");
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            left: 2%;
+            transform: translateY(-50%);
+            z-index: 999;
+            opacity: 0.5;
+        }
+
+        .right {
+            width: 40px;
+            height: 40px;
+            background-image: url("../image/right.png");
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            right: 2%;
+            transform: translateY(-50%);
+            z-index: 999;
+        }
+
+        .title {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 120px;
+        }
+
+        h1 {
+            color: #29519b;
+        }
+
+        .article {
+            width: 40%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 120px;
+        }
+
+        .article h2 {
+            margin-bottom: 10px;
+            font-size: 30px;
+            color: #29519b;
+
+        }
+    a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+    </style>
+</head>
+
+<body>
+	 
+	 <div class="nav">
+        <ul>
+            <li><a href="../index.html">个人主页</a></li>
+            <li><a href="法律知识讲解.html">法律知识讲解</a></li>
+            <li><a href="五院四系.html">五院四系</a></li>
+            <li><a href="法律影视作品.html">法律影视作品</a></li>
+            <li><a href="法律事件.html">法律事件</a></li>
+            <li><a href="法律人物.html">法律人物</a></li>
+            <div class="nav-box"></div>
+        </ul>
+</div>
+<div class="shell">
+    <div class="ocean">
+            <div class="ocean-text">&nbsp; &nbsp; &nbsp;  罗翔</div>
+  </div>
+        <div class="content">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="main">
+                <div class="box">
+                    <div class="page">
+                        <h2> 01</h2>
+                        <span> / 03</span>
+                    </div>
+                    <div class="title">
+                      <h4> 人物简介</h4>
+                        <h1>罗翔 法学教授</h1>
+                      <h5> 中国政法大学刑事司法学院教授</h5>
+                    </div>
+                    <div class="article">
+                        <h2>中国政法大学刑事司法学院教授、刑法学研究所所长</h2>
+                        <p>罗翔于1995年–1999年本科就读于中国青年政治学院，毕业获得法学学士学位；1999年–2002年硕士就读于中国政法大学研究生院，毕业获得刑法学硕士学位；2002年–2005年博士就读于北京大学法学院，毕业获得刑法学博士学位。2005年进入中国政法大学执教。2009年–2010年在美国加利福尼亚大学伯克利分校做访问学者；2013年–2014年在美国杜克大学做访问学者。2020年3月9日应邀入驻哔哩哔哩，两天粉丝超过百万，半年粉丝量突破千万。</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="page">
+                        <h2> 02</h2>
+                        <span> / 03</span>
+                    </div>
+                    <div class="title">
+                      <h4> 人物经历</h4>
+                        <h1> 代表作品：法治的细节、刑法学讲义</h1>
+                      <h5> 1977年，罗翔出生于湖南耒阳（今衡阳市耒阳市）</h5>
+                    </div>
+                    <div class="article">
+                      <h2> 因“法外狂徒”张三走红网络</h2>
+                        <p>1995年—1999年，本科就读于中国青年政治学院，毕业获得法学学士学位。
+1999年—2002年，硕士就读于中国政法大学研究生院，毕业获得刑法学硕士学位。
+2002年—2005年，博士就读于北京大学法学院，毕业获得刑法学博士学位。2003年，在北京念书期间，因经济压力开始法考培训授课，讲课陆陆续续坚持了十年。2019年2月，罗翔讲课的相关视频上传量突破100个，除了科技类视频，还有不少标题冠以“法律段子”和“趣味教学”的生活类视频。 </p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="page">
+                        <h2> 03</h2>
+                        <span> / 03</span>
+                    </div>
+                    <div class="title">
+                        <h4> 名言金句</h4>
+                        <h1> 做法治之光</h1>
+                        <h5> 我们依然是现实主义有瑕疵的善。</h5>
+                    </div>
+                    <div class="article">
+                      <h2>“勇敢，在人类所有的美德中勇敢是最稀缺的。” </h2>
+                        <p> 读书在我个人看来，就是为了攀登智慧的阶梯。这其实是一种悖论性的存在，我们因为无知而读书，但是读书让我真正的承认自己的无知与浅薄。拒绝读书当然是一种愚蠢，但是因为读书而滋生出骄傲与傲慢，这是一种更大的愚蠢。现代社会，刑法一定要有两个价值，一个是保护机能，惩罚犯罪，保护法益；另一个是保障机能，保障人权，限制刑法权。任何权利都必须在法律的框架内去运行，所以在现代社会刑法不再像古代一样是个刀把子，因为大家看到刑这个字就觉得他像刀把子。在现代社会，刑法是双刃剑，他有两个刃，一个刃砍向犯罪分子，惩罚犯罪保护人民；还有另外一个刃，砍向司法机关，限制司法机关的权利。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+</body>
+
+<script>
+    const left = document.querySelector(".left")
+    const right = document.querySelector(".right")
+    const main = document.querySelector(".main")
+    var index = 0
+    function add() {
+        if (index < 1) {
+            index = 2
+        } else {
+            index--
+        }
+    }
+    function desc() {
+        if (index > 1) {
+            index = 0
+        } else {
+            index++
+        }
+    }
+    function position() {
+        main.style.left = (index * -100) + "%" 
+    }
+    left.addEventListener("click", () => {
+        add()
+        position()
+        console.log(index)
+    }) 
+    right.addEventListener("click", () => {
+        desc()
+        position()
+        console.log(index)
+    }) 
+
+</script>
+
+</html>

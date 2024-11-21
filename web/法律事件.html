@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>典型法律事件</title>
+    <style>
+		 <style>
+		.nav ul {
+            list-style-type: none; /* 移除小黑点 */
+            padding: 0; /* 移除默认的内边距 */
+            margin: 0; /* 移除默认的外边距 */
+        }
+
+        *{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+        }
+        body{ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+			
+			
+         
+        }
+
+        .nav{ 
+            width: 1200px;
+            height: 70px;
+            position: fixed;
+            top: 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+			background-color:#fff；
+            
+        }
+        .nav ul{ 
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            right: 5%;
+        }
+        .nav ul .nav-box{ 
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* 如果导航栏就六个导航，那么每个导航的宽度都是整个导航
+            的六分之一 */
+            width: calc((100% / 6)*1);
+            height: 10px;
+            border-radius: 2px;
+            transition: .5s;
+        }
+        .nav ul li{ 
+            width: 100%;
+            text-align: center;
+        }
+        .nav ul li a{
+    color: hsla(270,47%,67%,1);
+    font: 100 30px '优设标题黑';
+    display: white;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+        }
+        .nav ul li:nth-child(1):hover~.nav-box{ 
+            left: calc(100% / 6 *0);
+            background-color: rgb(250, 190, 250);
+        }
+        .nav ul li:nth-child(2):hover~.nav-box{ 
+            left: calc(100% / 6 *1);
+            background-color: red;
+        }
+        .nav ul li:nth-child(3):hover~.nav-box{ 
+            left: calc(100% / 6 *2);
+            background-color: #d18df8;
+        }
+        .nav ul li:nth-child(4):hover~.nav-box{ 
+            left: calc(100% / 6 *3);
+            background-color: #ffb1b1;
+        }
+        .nav ul li:nth-child(5):hover~.nav-box{ 
+            left: calc(100% / 6 *4);
+            background-color: #8da1f8;
+        }
+        .nav ul li:nth-child(6):hover~.nav-box{ 
+            left: calc(100% / 6 *5);
+            background-color: #7df88e;
+		
+		}
+		.nav ul {
+    list-style-type: none; /* 移除小黑点 */
+    padding: 0; /* 移除默认的内边距 */
+    margin: 0; /* 移除默认的外边距 */
+}
+
+nav li {
+    display: inline; /* 使列表项水平排列 */
+    /* 其他样式 */
+}
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .shell {
+			margin-top: 75px;
+            display: flex;
+            flex-direction: column;
+            width: 90vw;
+            height: 90vh;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+            background-color: #fff;
+            color: #000;
+            overflow: hidden;
+        }
+
+        .ocean {
+            width: 100%;
+            height: 60%;
+            background-color: blue;
+            background-image: url("../image/背景图片.jpeg" );
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .ocean-text {
+    font: 900 20vh '';
+    position: relative;
+    background-image: url("../image/背景图片.jpeg");
+    background-size: 90% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transform: translate(10%, -5%);
+    -webkit-text-stroke: 5px #ffffff;
+    font-size: 10 vh;
+        }
+
+        .content {
+            position: relative;
+            width: 100%;
+            height: 40%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main {
+            width: 300%;
+            height: 35vh;
+            position: relative;
+            display: flex;
+            left: 0;
+            transition: .3s;
+        }
+
+        .box {
+            width: 100vw;
+            height: 100%;
+            position: relative;
+        }
+
+        .page {
+            position: absolute;
+            color: #fff;
+            left: 150px;
+            top: -80px;
+        }
+
+        .page h2 {
+            font: 900 120px '';
+            color: #29519b;
+        }
+
+        .page span {
+            font: 400 30px '';
+            position: absolute;
+            right: -55px;
+            top: 30px;
+            color: rgb(134, 194, 250);
+        }
+
+        .bbspan {
+            display: block;
+            font: 500 40px '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-55%);
+            left: 150px;
+        }
+
+        .box h3 {
+            position: absolute;
+            right: 180px;
+            top: 50%;
+            font: 100 19px '';
+            transform: translateY(-50%);
+        }
+
+        .left {
+            width: 40px;
+            height: 40px;
+            background-image: url("../image/left.png");
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            left: 2%;
+            transform: translateY(-50%);
+            z-index: 999;
+            opacity: 0.5;
+        }
+
+        .right {
+            width: 40px;
+            height: 40px;
+            background-image: url("../image/right.png");
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            right: 2%;
+            transform: translateY(-50%);
+            z-index: 999;
+        }
+
+        .title {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 120px;
+        }
+
+        h1 {
+            color: #29519b;
+        }
+
+        .article {
+            width: 40%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 120px;
+        }
+
+        .article h2 {
+            margin-bottom: 10px;
+            font-size: 30px;
+            color: #29519b;
+
+        }
+    a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+    </style>
+</head>
+
+<body>
+	 <div class="nav">
+        <ul>
+            <li><a href="../index.html">个人主页</a></li>
+            <li><a href="法律知识讲解.html">法律知识讲解</a></li>
+            <li><a href="五院四系.html">五院四系</a></li>
+            <li><a href="法律影视作品.html">法律影视作品</a></li>
+            <li><a href="法律事件.html">法律事件</a></li>
+            <li><a href="法律人物.html">法律人物</a></li>
+            <div class="nav-box"></div>
+        </ul>
+    </div>
+<div class="shell">
+    <div class="ocean">
+            <div class="ocean-text">奉法者强则国强</div>
+  </div>
+        <div class="content">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="main">
+                <div class="box">
+                    <div class="page">
+                        <h2> 01</h2>
+                        <span> / 03</span>
+                    </div>
+                    <div class="title">
+                      <h4> 孙小果案</h4>
+                        <h1> 涉黑案件</h1>
+                      <h5> 2020年2月20日，孙小果被执行死刑。</h5>
+                    </div>
+                    <div class="article">
+                        <h2>“孙小果案”入选了“2019年度十大法律监督案例”。</h2>
+                        <p>1994年10月16日，当时身为武警学校学生的孙小果等二人伙同4名社会无业青年驾车游荡，在昆明环城南路强行将两位女青年拉上车，驶至呈贡县境内呈贡至宜良6公里处将其轮奸。1997年4月的一天晚上，孙小果在茶苑楼宾馆908号房，强奸了16岁少女宋某。 [2]6月1日，在昆明茶苑楼宾馆906房间有其他人的情况下，孙小果不顾张某某反抗，当众强奸了张某某。6月5日，孙小果在茶苑宾馆906房间，强奸了女学生波某某。</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="page">
+                        <h2> 02</h2>
+                        <span> / 03</span>
+                    </div>
+                    <div class="title">
+                      <h4> 复活计</h4>
+                        <h1> 变身“李林宸”</h1>
+                      <h5> 2019年6月4日，全国扫黑办派大要案督办组赴云南督办孙小果案，进驻昆明。</h5>
+                    </div>
+                    <div class="article">
+                        <h2> “孙小果案”入选了“2019年度十大法律监督案例”。</h2>
+                        <p>2009年5月，获得实用新型专利的孙小果，在其母孙鹤予（孙学梅）、继父李桥忠的运作下开始向法院申请减刑。010年4月，孙小果的减刑申请获得了法院的裁定核准后出狱。据了解，孙小果的大部分减刑是在云南省第一监狱完成，最后在省二监孙小果共减刑两年八个月，其中媒体广泛关注的重大发明专利，实际只减刑1年5个月，另外的1年3个月是根据其平时表现获得的常规减刑。从1997年11月孙小果被刑事拘留，至2010年4月出狱，孙小果实际服刑约13年。 </p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="page">
+                        <h2> 03</h2>
+                        <span> / 03</span>
+                    </div>
+                    <div class="title">
+                        <h4> 社会评论</h4>
+                        <h1> 公平正义是民众对法治的最高期待</h1>
+                        <h5> 一群“小苍蝇”的权力竟然如此巨大？</h5>
+                    </div>
+                    <div class="article">
+                        <h2>“孙小果案”入选了“2019年度十大法律监督案例”。 </h2>
+                        <p> 2020年2月20日，遵照最高人民法院下达的执行死刑命令，云南省昆明市中级人民法院依法对罪犯孙小果执行了死刑。昆明市中级人民法院在执行死刑前，依法安排罪犯孙小果会见了近亲属，充分保障了被执行罪犯的合法权利。这些看似普通的基层执法者，好比隐藏在木头中的白蚁，肆意践踏着法律，权力滥用、寻租变现等违法违纪行为，直接在公众中造成不良影响，一点一滴地持续损害着法治的公信力。“苍蝇之害猛于虎”，孙小果案印证了“苍蝇”的危害性。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+</body>
+
+<script>
+    const left = document.querySelector(".left")
+    const right = document.querySelector(".right")
+    const main = document.querySelector(".main")
+    var index = 0
+    function add() {
+        if (index < 1) {
+            index = 2
+        } else {
+            index--
+        }
+    }
+    function desc() {
+        if (index > 1) {
+            index = 0
+        } else {
+            index++
+        }
+    }
+    function position() {
+        main.style.left = (index * -100) + "%" 
+    }
+    left.addEventListener("click", () => {
+        add()
+        position()
+        console.log(index)
+    }) 
+    right.addEventListener("click", () => {
+        desc()
+        position()
+        console.log(index)
+    }) 
+
+</script>
+
+</html>
